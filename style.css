@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+body {
+    background-color: white;
+    color: #222;
+}
+header {
+    text-align: center;
+    padding: 28px 10px;
+    border-bottom: 1px solid #222;
+    margin: 0 7px;
+}
+header h1 {
+    font-size: 14px;
+    font-weight: bold;
+}
+main {
+    width: 80%;
+    max-width: 850px;
+    margin: 0 auto;
+}
+.grafico {
+    width: 85%;
+    margin: 15px auto 0;
+}
+.grafico h2 {
+    text-align: center;
+    font-size: 14px;
+    font-weight: normal;
+    color: #666;
+    margin-bottom: 5px;
+}
+.grafico canvas {
+    width: 100% !important;
+    height: 220px !important;
+}
+.semanal {
+    width: 50%;
+    margin-top: 20px;
+}
+.semanal h2 {
+    font-size: 16px;
+}
+.tabela {
+    width: 55%;
+    margin: 25px auto;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 18px 10px;
+}
+th {
+    font-size: 16px;
+    font-weight: normal;
+    background-color: #fafafa;
+}
+td {
+    font-size: 15px;
+}
+@media (max-width: 700px) {
+    main {
+        width: 95%;
+    }
+    .grafico,
+    .semanal,
+    .tabela {
+        width: 100%;
+    }
+    .grafico canvas {
+        height: 200px !important;
+    }
+    th,
+    td {
+        padding: 12px 5px;
+    }
+}
